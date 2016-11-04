@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>NewsFeed | Shristi Portfolio </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link rel="icon" href="images/ico/favicon.ico" type="image/ico/x-icon">
+    <link rel="shortcut icon" href="images/ico/favicon.ico" type="image/ico/x-icon">
+
+</head><!--/head-->
+<body>
+   
+   <div class="container-fluid" style="background-color:#E3746C;color:#fff;height:80px; padding: 10px;">
+ <h3 class="text-center">Welcome to Shristi's Portfolio</h3>
+
+</div>
+
+   <nav class="navbar navbar-default navbar-fixed wet-asphalt"  data-spy="affix" data-offset-top="78">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeader" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">Nature Feeds</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navHeader" ng-controller="HeaderController" style="height:1px;" >
+          <ul class="nav navbar-nav">
+            <li  ng-class="{ active: isActive('/home')}"> <a  href="#home" data-toggle="collapse" data-target="#navbar">Home</a></li>
+            <li ng-class="{ active: isActive('/aboutus')}" > <a href="#aboutus" data-toggle="collapse" data-target="#navbar">About</a></li>
+            <li ng-class="{ active: isActive('/contactus')}"> <a href="#contactus" data-toggle="collapse" data-target="#navbar">Contact</a></li>
+            <li class="dropdown">
+             <!-- <a href="#blogItem">Blog Item <span class="caret"></span></a> -->
+               <button type="button" class="btn btn-warning btn-lg" id="myBtn">Login/ Register</button>
+             <div ng-include="'partials/modal.html'"></div>
+    
+          </li>
+          </ul>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+   
+  
+
+  <div ng-view></div>
+
+
+
+    <section id="bottom" class="wet-asphalt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h4>About Us</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <h4>Company</h4>
+                    <div>
+                        <ul class="arrow">
+                            <li><a href="#home">Company Overview</a></li>
+                            <li><a href="#home">Meet The Team</a></li>
+                            <li><a href="#home">Our Awesome Partners</a></li>
+                            <li><a href="#home">Our Services</a></li>
+                            <li><a href="#home">Frequently Asked Questions</a></li>
+                            <li><a href="#home">Conatct Us</a></li>
+                            <li><a href="#home">Privacy Policy</a></li>
+                            <li><a href="#home">Terms of Use</a></li>
+                            <li><a href="#home">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <h4>Latest Blog</h4>
+                    <div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="images/blog/thumb1.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="#">Lorem Ipsum is simply dummy text</a></span>
+                                <small class="muted">Posted 17 Oct 2015</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="images/blog/thumb2.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="#">Lorem Ipsum is simply dummy text</a></span>
+                                <small class="muted">Posted 19 Sep 2015</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="images/blog/thumb3.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="#">Lorem Ipsum is simply dummy text</a></span>
+                                <small class="muted">Posted 12 June 2016</small>
+                            </div>
+                        </div>
+                    </div>  
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                
+                <h4>Follow us on</h4>
+                   <ul class="list-inline text-center social-circle">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <h4>Address</h4>
+                    <address>
+                        <strong> Nature Feeds</strong><br>
+                        Queens<br>
+                        New York, NY 11368<br>
+                        <abbr title="Phone">P:</abbr> (000)-000-0000
+                    </address>
+                    <h4>Newsletter</h4>
+                    <form role="form" name="Subform">
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control" autocomplete="off" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type="submit" ng-disabled="Subform.$email.$invalid">Go!</button>
+                            </span>
+                        </div>
+                    </form>
+                </div> <!--/.col-md-3-->
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2016 Nature Feed.
+                </div>
+                       <a id="gototop" class="gototop pull-right" href="#"><i class="fa fa-chevron-up"></i></a><!--#gototop-->
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.js"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
