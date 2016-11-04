@@ -1,0 +1,102 @@
+/*contact css */
+  
+  @media (min-width: 1024px){
+.section > .section-inner .section-content {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+}
+.section > .section-inner .section-content {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+ .section-content .form-group .input-group {
+    width: 100%;
+  }
+ .section-content .form-group textarea {
+    height: 125px;
+   }
+   
+  .section-content .form-group button {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 0px;
+}
+.btn.btn-sg {
+    background-color: #f06060;
+    border-color: #f27777;
+}
+
+.btn.btn-sg {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.content-headline h2 {
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin: -20px auto 0;
+    padding: 0 20px;
+}
+.content-item {
+    padding: 30px 0;
+    background-color: #fff;
+}
+.content-headline{
+    background-color: #CB2027;
+    height: 1px;
+    text-align: center;
+    margin: 20px 0 70px;
+}
+.content-headline h3 {
+    font-size: 14px;
+    color: #AAAAAA;
+    display: block;
+}
+
+.content-item .row div {
+    text-align: center;
+}
+
+.content-item .row div i {
+    border: 10px solid #DDDDDD;
+    font-size: 50px;
+    width: 130px;
+    height: 130px;
+    padding-top: 30px;
+    border-radius: 50%;
+    color: #999999;
+    transition: all 1s ease;
+}
+.content-item .row div i:hover{
+    background: #72c02c;
+    color: #FFF;
+    border-color:#f5f5f5;
+}
+
+/*social media icons*/
+.social-circle a{
+	color:#51A3D6 !important;
+}
+
+.social-circle li a:hover i{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+  
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
