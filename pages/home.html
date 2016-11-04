@@ -1,0 +1,193 @@
+<section id="main-slider">
+<div class="carousel slide " data-ride="carousel"> 
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">Welcome</h2>
+                                    <p class="animation animated-item-2">to Nature news</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(images/slider/bg2.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1">Natural </h2>
+                                    <p class="boxed animation animated-item-2">Beauty </p>
+                                    <br>
+                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(images/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">Breathtaking</h2>
+                                    <p class="animation animated-item-2">Views</p>
+                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                </div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+         </div> <!--/ .carousel-->
+        <a  class="prev" data-target="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next" data-target="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+  </section> <!--main slider-->
+    <script>
+         $('.carousel').carousel({
+        interval: 3000
+    })
+    </script>
+    
+    
+    
+     <section id="recent-works">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-3 panelColor">
+                 <div class="panel panel-primary">
+                      <div class="panel-heading">
+                      	<center>
+                        	<label>Trending Now</label>
+                        </center>
+                      </div>
+                      <div class="panel-body">
+                     <img class="img-responsive" src="images/trendingNow.png" alt="">
+                    
+                    <div class="btn-group">
+                        <a class="btn btn-danger" data-target="#scroller"  data-slide="prev"> <i class="fa fa-chevron-left"></i></a>
+                        <a class="btn btn-danger" data-target="#scroller"  data-slide="next"> <i class="fa fa-chevron-right"></i></a>
+                    </div>
+                   </div>
+                </div>
+                 </div>
+                <div class="col-md-9">
+                    <div id="scroller" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                      <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                                                <h5>
+                                                    Recent News
+                                                </h5>
+
+                                            </div>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+                                                <h5>
+                                                    Recent News
+                                                </h5>
+
+                                            </div>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                                                <h5>
+                                                    Recent News
+                                                </h5>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--/.row-->
+                            </div><!--/.item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+                                                <h5>
+                                                    Recent News
+                                                </h5>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
+                                                <h5>
+                                                   Recent News
+                                                </h5>
+
+                                            </div>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
+                                                <h5>
+                                                    Recent News
+                                                </h5>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--/.item-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.row-->
+        </div>
+    </section><!--/#recent-works-->
+    
+
+<!-- overlay class needs to be removed later on -->
+ <section id="portfolio" class="container">
+    
+        <ul class="portfolio-filter">
+            <li><a class="btn btn-default" ng-click="qery = ''" ng-class="{active: qery == ''}">All</a></li>
+            <li><a class="btn btn-default" ng-click="qery = {type:'recent'}" ng-class="{active: qery == 'recent'}" >Recent</a></li>
+            <li><a class="btn btn-default" ng-click="qery = {type:'save'}" ng-class="{active: qery == 'save'}">Popular</a></li>
+            <li><a class="btn btn-default" ng-click="qery = {type:'earn'}" >Discussion</a></li>
+         
+        </ul><!--/#portfolio-filter-->
+    <div class="row">
+       <ul class="portfolio-items">
+        <li class="portfolio-item apps col-md-4 col-sm-6" ng-repeat= "list in lists | filter:qery">
+          <div class="item-inner">
+         <img ng-src="{{list.image}}" alt="{{list.title}}">
+         <h5>{{list.title}}</h5>
+         <p>{{list.description}}</p>
+         </div>
+       </li>
+      </ul>
+    </div>
+    </section><!--/#portfolio-->
+
