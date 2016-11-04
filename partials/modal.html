@@ -1,0 +1,46 @@
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" ng-controller="validateCtrl">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form" name="myForm" novalidate>
+            <div class="form-group">
+              <label for="usrname" style="color:#333"><span class="glyphicon glyphicon-user"></span> Username</label>              
+              <input type="text" class="form-control" id="usrname" placeholder="Enter Username" name="user" ng-model="user" required />
+            <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+            <span ng-show="myForm.user.$error.required">Username is required.</span>
+            </span>
+              
+            </div>
+            <div class="form-group">
+              <label for="psw" style="color:#333"><span class="glyphicon glyphicon-eye-open"></span> Password</label>        
+            <input type="password" class="form-control" id="psw" value="Enter password"  name="password" ng-model="password" required />
+          <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+          <span ng-show="myForm.password.$error.required">Password is required.</span>
+          <span ng-show="myForm.password.$error.password">Invalid password.</span>
+          </span>
+              
+            </div>
+            <div class="checkbox">
+              <p><input type="checkbox" value="" checked>Remember me</p>
+            </div>
+              <button type="submit" class="btn btn-success btn-block" ng-disabled="myForm.user.$invalid && myForm.user.$dirty||  
+ myForm.password.$invalid && myForm.password.$dirty"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+           <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+
+        <div class="modal-footer" data-dismiss="modal">
+     <h4><span class="glyphicon glyphicon-remove"></span> Cancel</h4>
+      </div>
+      </div>
+      
+    </div>
+  </div>
